@@ -8,16 +8,25 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Vue learning!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <div class="nav-group">
+          <RouterLink to="/step-1">Step 1</RouterLink>
+          <RouterLink to="/step-2">Step 2</RouterLink>
+          <RouterLink to="/step-3">Step 3</RouterLink>
+        </div>
+        <div class="nav-group">
+          <RouterLink to="/step-4">Step 4</RouterLink>
+          <RouterLink to="/step-5">Step 5</RouterLink>
+        </div>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <div class="page-wrapper">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
@@ -47,13 +56,18 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  display: inline-block;
+  display: block;
+  width: 100px;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
   border: 0;
+}
+
+nav .nav-group {
+  display: flex;
 }
 
 @media (min-width: 1024px) {
