@@ -10,7 +10,7 @@ const counter = reactive({ count: 0 })
   <div>
     You can make create a reactive state by using
     <a href="https://vuejs.org/api/reactivity-core.html#ref">ref</a> or
-    <a href="https://vuejs.org/api/reactivity-core.html#reactive">reactive</a>
+    <a href="https://vuejs.org/api/reactivity-core.html#reactive">reactive</a>:
   </div>
   <h1>{{ message }}</h1>
   <p>Count is: {{ counter.count }}</p>

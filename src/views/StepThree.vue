@@ -6,13 +6,13 @@ const color = ref('red')
 
 <template>
   <h3>Attribute Bindings</h3>
-  <div>Example:</div>
+  <div><i>Example:</i></div>
   <code>
     {{ `
     <div v-bind:id="dynamicId"></div>
     ` }}
   </code>
-  <div>or</div>
+  <div><i>or</i></div>
   <code>
     {{ `
     <div :id="dynamicId"></div>
