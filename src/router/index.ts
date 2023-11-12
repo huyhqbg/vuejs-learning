@@ -1,20 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import StepOne from '../views/StepOne.vue'
-import StepTwo from '../views/StepTwo.vue'
-import StepThree from '../views/StepThree.vue'
-import StepFour from '../views/StepFour.vue'
-import StepFive from '../views/StepFive.vue'
-import StepSix from '../views/StepSix.vue'
-import StepSeven from '../views/StepSeven.vue'
 import StepEight from '../views/StepEight.vue'
-import StepNine from '../views/StepNine.vue'
-import StepTen from '../views/StepTen.vue'
 import StepEleven from '../views/StepEleven.vue'
-import StepTwelve from '../views/StepTwelve.vue'
-import StepThirteen from '../views/StepThirteen.vue'
-import StepFourteen from '../views/StepFourteen.vue'
 import StepFifteen from '../views/StepFifteen.vue'
+import StepFive from '../views/StepFive.vue'
+import StepFour from '../views/StepFour.vue'
+import StepFourteen from '../views/StepFourteen.vue'
+import StepNine from '../views/StepNine.vue'
+import StepOne from '../views/StepOne.vue'
+import StepSeven from '../views/StepSeven.vue'
+import StepSix from '../views/StepSix.vue'
+import StepTen from '../views/StepTen.vue'
+import StepThirteen from '../views/StepThirteen.vue'
+import StepThree from '../views/StepThree.vue'
+import StepTwelve from '../views/StepTwelve.vue'
+import StepTwo from '../views/StepTwo.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +22,9 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      redirect: 'step-1',
+      children: []
     },
     {
       path: '/step-1',

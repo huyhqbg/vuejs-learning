@@ -41,7 +41,7 @@ const filterTodos = computed(() => {
     We can create a
     <a href="https://vuejs.org/guide/essentials/computed.html#computed-properties">computed</a>
     ref that computes its
-    <code class="high-light">.value</code>
+    <code class="highlight">.value</code>
     based on other reactive data sources:
   </div>
 

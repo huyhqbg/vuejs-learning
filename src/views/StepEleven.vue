@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ChildComponentVue from './ChildComponent.vue'
+</script>
 
 <template>
-  <div></div>
+  <h3>Components</h3>
+  <ChildComponentVue />
 </template>
 
 <style scoped></style>

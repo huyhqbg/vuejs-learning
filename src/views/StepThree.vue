@@ -6,19 +6,26 @@ const color = ref('red')
 
 <template>
   <h3>Attribute Bindings</h3>
-  <div><i>Example:</i></div>
-  <code>
+  <div>
+    In Vue, mustaches are only used for text interpolation. To bind an attribute to a dynamic value,
+    we use the
+    <a href="https://vuejs.org/api/built-in-directives.html#v-bind">v-bind</a>
+    directive:
+  </div>
+  <br />
+  <div>Example:</div>
+  <code class="highlight">
     {{ `
     <div v-bind:id="dynamicId"></div>
     ` }}
   </code>
-  <div><i>or</i></div>
-  <code>
+  <div>or</div>
+  <code class="highlight">
     {{ `
     <div :id="dynamicId"></div>
     ` }}
   </code>
-  <h1 :class="color">This heading is bound to a state with a value of 'red.</h1>
+  <h1 :class="color">This heading is bound to a state with a value of red.</h1>
 </template>
 
 <style scoped>

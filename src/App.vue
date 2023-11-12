@@ -27,7 +27,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/step-9">Step 9</RouterLink>
         </div>
         <div class="nav-group">
-          <RouterLink to="/step-10">Step 4</RouterLink>
+          <RouterLink to="/step-10">Step 10</RouterLink>
           <RouterLink to="/step-11">Step 11</RouterLink>
           <RouterLink to="/step-12">Step 12</RouterLink>
         </div>
